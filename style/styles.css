@@ -105,3 +105,65 @@ div .card {
 .blog-content1 {
   background-color: rgba(248, 248, 230, 0.671);
 }
+.flower-pattern,
+.image-container {
+  background-image: url("../images/Flower-Pattern-Glass.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+.glass-mosaic,
+.image-container {
+  background-image: url("../images/Glass-Mosaic-Art.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+.mural-bathroom,
+.image-container {
+  background-image: url("../images/Mural-Bathroom-Tile.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+}
+.image-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+}
+
+.card-container2 .card_2 {
+  margin: 0px 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.card-container2 .card_2 div {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2vw;
+  position: relative;
+  z-index: 1;
+}
+.card-container2 {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container2 .card_2 div h3,
+p {
+  color: rgb(255, 166, 0);
+}
