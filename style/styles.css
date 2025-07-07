@@ -113,6 +113,7 @@ div .card {
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
+  z-index: 0;
 }
 .glass-mosaic,
 .image-container {
@@ -122,6 +123,7 @@ div .card {
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
+  z-index: 0;
 }
 .mural-bathroom,
 .image-container {
@@ -131,6 +133,7 @@ div .card {
   background-repeat: no-repeat;
   height: auto;
   width: 100%;
+  z-index: 0;
 }
 .image-container::before {
   content: "";
@@ -138,7 +141,9 @@ div .card {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
 }
-
+.text{
+  z-index: 1;
+}
 .card-container2 .card_2 {
   margin: 0px 300px;
   display: flex;
